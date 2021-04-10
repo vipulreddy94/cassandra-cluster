@@ -11,7 +11,7 @@ Setting up a 3 node cassandra cluster, spread across two datacenters, using dock
      ```
      docker run --name cas1 -p 9042:9042 -e CASSANDRA_CLUSTER_NAME=MyCluster -e CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch -e CASSANDRA_DC=datacenter1 -d cassandra
      ```
-  - Run the second and third containers cas2 (datacenter1) and cas3 (datacenter2) with the same clustername MyCluster. 
+  - Run the second and third containers cas2 (datacenter1) and cas3 (datacenter2) with the same clustername MyCluster. In order to form a cluster and communicate, containers have to be connected - containers 2 and 3 are fed the IP address of the container 1 through an environment variable called CASSANDRA_SEEDS.
      
      container 2
      

@@ -59,4 +59,5 @@ Setting up a 3 node cassandra cluster, spread across two datacenters, using dock
 
 
 
-  - Reference : https://blog.toadworld.com/2018/02/13/build-a-cassandra-cluster-on-docker 
+  - Reference 1 : https://blog.toadworld.com/2018/02/13/build-a-cassandra-cluster-on-docker 
+  - Reference 2 : https://towardsdatascience.com/getting-started-with-apache-cassandra-and-python-81e00ccf17c9
